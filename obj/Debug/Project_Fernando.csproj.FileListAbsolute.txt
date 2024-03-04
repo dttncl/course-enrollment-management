@@ -1,0 +1,12 @@
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\bin\Debug\Project_Fernando.exe.config
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\bin\Debug\Project_Fernando.exe
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\bin\Debug\Project_Fernando.pdb
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.csproj.AssemblyReference.cache
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.csproj.SuggestedBindingRedirects.cache
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.Form1.resources
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.Properties.Resources.resources
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.csproj.GenerateResource.cache
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.csproj.CoreCompileInputs.cache
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.exe
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.pdb
+C:\Users\dette\source\repos\Fall2023\420_DA3_AS\Project_Fernando\obj\Debug\Project_Fernando.Form2.resources

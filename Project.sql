@@ -1,0 +1,79 @@
+
+IF db_id('College1en') IS NULL CREATE DATABASE College1en;
+GO
+
+USE College1en ;
+
+CREATE TABLE Programs (
+	ProgId VARCHAR(5)  NOT NULL, 
+	ProgName VARCHAR(50) NOT NULL UNIQUE,
+	PRIMARY KEY (ProgId)
+);
+
+
+CREATE TABLE Courses (
+	CId VARCHAR(7) NOT NULL, 
+	CName VARCHAR(50) NOT NULL UNIQUE,
+	ProgId VARCHAR(5) NOT NULL,
+	PRIMARY KEY (CId),
+	FOREIGN KEY (ProgId) REFERENCES Programs(ProgId)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE
+);
+
+CREATE TABLE Students (
+	StId VARCHAR(10) NOT NULL, 
+	StName VARCHAR(50) NOT NULL,
+	ProgId VARCHAR(5) NOT NULL,
+	PRIMARY KEY (StId),
+	FOREIGN KEY (ProgId) REFERENCES Programs(ProgId)
+	ON DELETE NO ACTION
+	ON UPDATE CASCADE
+);
+
+CREATE TABLE Enrollments (
+	StId VARCHAR(10) NOT NULL, 
+	CId VARCHAR(7) NOT NULL,
+	FinalGrade INT,
+	PRIMARY KEY (StId,CId),
+	FOREIGN KEY (StId) REFERENCES Students(StId)
+	ON DELETE CASCADE
+	ON UPDATE CASCADE,
+	FOREIGN KEY (CId) REFERENCES Courses(CId)
+	ON DELETE NO ACTION
+	ON UPDATE NO ACTION
+);
+
+GO
+
+INSERT INTO Programs
+VALUES	( 'P0001', 'Computer Science'),
+		( 'P0002', 'Business Studies'),
+		( 'P0003', 'Engineering');
+
+INSERT INTO Courses
+VALUES	( 'C000001', 'Introduction to Programming', 'P0001'),
+		( 'C000002', 'Marketing Principles', 'P0002'),
+		( 'C000003', 'Mechanical Engineering', 'P0003');
+
+INSERT INTO Students
+VALUES	( 'S000000001', 'Bill Gates', 'P0001'),
+		( 'S000000002', 'Steve Jobs', 'P0002'),
+		( 'S000000003', 'Ada Lovelace', 'P0003');
+
+INSERT INTO Enrollments
+VALUES	( 'S000000001', 'C000001', 90),
+		( 'S000000002', 'C000002', 85),
+		( 'S000000003', 'C000003', 98);
+
+GO
+
+
+
+
+
+
+
+
+
+
